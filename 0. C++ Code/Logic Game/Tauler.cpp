@@ -1,8 +1,7 @@
 #include "Tauler.hpp"
 #include <sstream> // Concatenar 'couts'.
-#include "/Ingenieria Informática/ProjecteDamesMP/0. C++ Code/Logic Game/GraphicManager.h"
-#include "/Ingenieria Informática/ProjecteDamesMP/0. C++ Code/Logic Game/info_joc.hpp"
-
+#include "GraphicManager.h"
+#include "info_joc.hpp"
 Tauler::Tauler()
 {
 	for (int i = 0; i < N_FILES; i++)
@@ -86,7 +85,7 @@ void Tauler::inicialitza(const string& NomFitxer)
 			}
 			default:
 			{
-				continue; // IGNORAR LO INVÀLID.
+				continue; // IGNORAR LO INVÃ€LID.
 			}
 		}
 
@@ -277,7 +276,7 @@ void Tauler::actualitzaMovimentsValids()
 				{
 					if (m_Tauler[novaFila][novaColumna]->esBuida() && !teCaptura) // Si la nova casella es buida, ens podem moure.
 					{
-						// Creem moviment, hi afegim la nova posició (fila, col) i afegim aquest mov. a la llista de movs. vàlids.
+						// Creem moviment, hi afegim la nova posiciÃ³ (fila, col) i afegim aquest mov. a la llista de movs. vÃ lids.
 						Moviment M;
 						M.afegeiexPosicio(Posicio(novaFila, novaColumna));
 						F->afegeixMovimentValid(M);
@@ -441,7 +440,7 @@ int Tauler::obtenirCaptures(const Posicio& P, ColorFitxa C, bool esDama, Posicio
 				Fitxa* Mig = m_Tauler[filaMig][colMig];
 				Fitxa* Salt = m_Tauler[filaSalt][colSalt];
 
-				// Si la del mig és rival i la destí està buida
+				// Si la del mig Ã©s rival i la destÃ­ estÃ  buida
 				if (!Mig->esBuida() && Mig->getColor() != C && Salt->esBuida())
 				{
 					Resultats[n] = Posicio(filaSalt, colSalt);
@@ -466,9 +465,9 @@ int Tauler::obtenirCaptures(const Posicio& P, ColorFitxa C, bool esDama, Posicio
 					{
 						Resultats[n] = Posicio(filaActual, columnaActual);
 						n++;
-						break; // Només un salt per direcció.
+						break; // NomÃ©s un salt per direcciÃ³.
 					}
-					// Si no hi ha rival, seguim avançant.
+					// Si no hi ha rival, seguim avanÃ§ant.
 					else
 					{
 						if (Casella->getColor() != C)
@@ -477,7 +476,7 @@ int Tauler::obtenirCaptures(const Posicio& P, ColorFitxa C, bool esDama, Posicio
 						}
 						else
 						{
-							// Fitxa pròpia -> bloqueja el camí.
+							// Fitxa prÃ²pia -> bloqueja el camÃ­.
 							break;
 						}
 					}
@@ -594,7 +593,7 @@ bool Tauler::mouFitxa(const Posicio& Origen, const Posicio& Desti)
 	m_Tauler[filaDesti][columnaDesti] = fitxaOrigen;
 	m_Tauler[filaOrigen][columnaOrigen] = new Fitxa(TIPUS_EMPTY, COLOR_BLANC);
 
-	// Captures intermèdies.
+	// Captures intermÃ¨dies.
 	int filaAnterior = filaOrigen;
 	int colAnterior = columnaOrigen;
 
@@ -625,7 +624,7 @@ bool Tauler::mouFitxa(const Posicio& Origen, const Posicio& Desti)
 		colAnterior = colActual;
 	}
 
-	// Promoció a dama.
+	// PromociÃ³ a dama.
 	if ((fitxaOrigen->getColor() == COLOR_BLANC && filaDesti == 0) ||
 		(fitxaOrigen->getColor() == COLOR_NEGRE && filaDesti == N_FILES - 1))
 	{
