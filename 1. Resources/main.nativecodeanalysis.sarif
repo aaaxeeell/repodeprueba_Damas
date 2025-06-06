@@ -1,0 +1,555 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.43.34810.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/logic game/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "ad19c3abc9a5a7e598c9c68edc9097a352e65642fd799ed5b967bf5e2272aa53"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/libreria.h"
+          },
+          "hashes": {
+            "sha-256": "8644c5f3512dfb7a8793aad8ea1911654bc7bc226da8058b806af9f3aa3fccc0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/keyboard.h"
+          },
+          "hashes": {
+            "sha-256": "4ffb88faed427a809ffad940e6d563599c7ba367f06fe1ee74e25d5eb7c8f7c0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl.h"
+          },
+          "hashes": {
+            "sha-256": "5d459a4c7c9594bb62b29527f0361cf5db730f33dedc17d5ee46c62830e5fd29"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_main.h"
+          },
+          "hashes": {
+            "sha-256": "58dc637f72ae8fc01bde9c0cea0c4979802c7595b25de4e03b3dd568e29e6cbc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_stdinc.h"
+          },
+          "hashes": {
+            "sha-256": "6ef0b61a0939d24ab119ce3f9ac2a7d4d24fb5ba5a4f71c07f7929eb8afe036c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_config.h"
+          },
+          "hashes": {
+            "sha-256": "d4fb8f8699b4375b5b902eda1a0d6740783527273f6e615a80ae10d8d642ddf7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_platform.h"
+          },
+          "hashes": {
+            "sha-256": "67ef6c86177bd6f52e25c12ab9b0a2fce0aaaa3ffbb250e91c97f2bd535539d5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/begin_code.h"
+          },
+          "hashes": {
+            "sha-256": "cc1c96960e89e13e5a1915834d93e9ab3cf002a95507e59a4ee0a7c945e2a469"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/close_code.h"
+          },
+          "hashes": {
+            "sha-256": "6e64d9868ba81a78ac39b7829dc3fa9aa3e7bc562844fa8e1728dbc4f68bb997"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_config_windows.h"
+          },
+          "hashes": {
+            "sha-256": "1eb85a900119880fdb983c7ecd150526a0f779a621800b5f1a3912f8dd8548c6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_assert.h"
+          },
+          "hashes": {
+            "sha-256": "04502000c4a6f04495b0f2a97f2659fe9d1375eb242b9c2c524785b27e106fa2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_atomic.h"
+          },
+          "hashes": {
+            "sha-256": "78be29b7902d44a41d52326f387ec2e9b03bcc8e554acdc14c354d51439f4b8c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_audio.h"
+          },
+          "hashes": {
+            "sha-256": "5ce23e29949205c703298d168bcf9f3c2a63ca25813c8d6ea558572bd7daf34f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_error.h"
+          },
+          "hashes": {
+            "sha-256": "7b153e826107559535a9ea3846109facc320e8544216da57feab79807eb4ff23"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_endian.h"
+          },
+          "hashes": {
+            "sha-256": "722243927fc8b6bef262aabf6ee4c4908b75031f223b842d852d4f48fd9d6f6f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_mutex.h"
+          },
+          "hashes": {
+            "sha-256": "bc312ae51c6c858988276a8d2a6eb2ffb2572c37ce481c33595f170a38f1fb4e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_thread.h"
+          },
+          "hashes": {
+            "sha-256": "dfe0b59b6cf694f94b8db3144d683aaa86c83e4b163a3a6b0114edec730d615f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_rwops.h"
+          },
+          "hashes": {
+            "sha-256": "b0e7161d396ea1f3b5caa907ef4b38f03bfeef5b193af2a7f3e6608571db08bd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_clipboard.h"
+          },
+          "hashes": {
+            "sha-256": "2cf423faeb4f5f298864a2e5849c8c3275721b2feb6380051cc062c53bc335e6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_cpuinfo.h"
+          },
+          "hashes": {
+            "sha-256": "ae29e20a903f466346cf8554c9c8bf1b4a0fe237e6e0c208242c6c8f6b9f4386"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_events.h"
+          },
+          "hashes": {
+            "sha-256": "b13f061e8d0c1fac90c197de931dc35b1d1c5c5a1787db9491165c4a3d6c4ceb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_video.h"
+          },
+          "hashes": {
+            "sha-256": "258a663e3837eb53d6bb1883eb2762bdbfec16e521afe7635d248388b52c1581"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_pixels.h"
+          },
+          "hashes": {
+            "sha-256": "467c6e1bf49b44bdae88284e523a768088980ce2e62c6b0551517c53cc8cd470"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_rect.h"
+          },
+          "hashes": {
+            "sha-256": "f7065fdcdc67dc0dfa9f579a66a64bf2040a3e7f02156b64bfd15bf42037e70a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_surface.h"
+          },
+          "hashes": {
+            "sha-256": "b9056ee6ba5afc9e110fe7e7c673ebac0e3bf0ad37c0bf1b73844999c0762f4a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_blendmode.h"
+          },
+          "hashes": {
+            "sha-256": "50e16500110808ee30e6c0ad15b37b0a29c0f0c9aff5a868a65ce184be07db43"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_keyboard.h"
+          },
+          "hashes": {
+            "sha-256": "3ffe3258b89f50c404b4d8c73f9848198bcc72aa4acb15b7e08d3de0ce2cac09"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_keycode.h"
+          },
+          "hashes": {
+            "sha-256": "74c5176201f3a807c526f13321dfaa79b96b62cdafca7e3d3ca3c6c942841fe1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_scancode.h"
+          },
+          "hashes": {
+            "sha-256": "61f603e2d726625e374a72c1e20639875b6aa447b0711d310ec3e1a5615fc078"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_mouse.h"
+          },
+          "hashes": {
+            "sha-256": "540c9cafa5a107b87393bc31b3df34ca6d2ab7a75f983bfe4e00f10a8dde844f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_joystick.h"
+          },
+          "hashes": {
+            "sha-256": "10142efe4c94eb910694dcb14fef751dc8604f2a8855171ebe49eabfd1b53132"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_gamecontroller.h"
+          },
+          "hashes": {
+            "sha-256": "a62bc337f93cfb69381fe80b276c1457ce29075660549cc2c4c1ac1bfd212ac4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_quit.h"
+          },
+          "hashes": {
+            "sha-256": "2f8858e6e020402d8ddb2b38a7b8a4621cdac727679af49667d00b0e0700f1a8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_gesture.h"
+          },
+          "hashes": {
+            "sha-256": "d2db4e5ba77a55d35b5af63a8db2a2c4e05f35a6b009c8f221539dd3e4e65d27"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_touch.h"
+          },
+          "hashes": {
+            "sha-256": "95314cb29e2847031e91c0031ec06b41710a8f290da4fa11dabf935a74f5b0fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_filesystem.h"
+          },
+          "hashes": {
+            "sha-256": "901fd6e41483dd910de9debc23764678c000c23671cc0f9956eeef1fead70119"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_haptic.h"
+          },
+          "hashes": {
+            "sha-256": "b70474e624745d2149cef5b0bb0b182bb49dbc82e2687f541ad857e37de69e9d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_hints.h"
+          },
+          "hashes": {
+            "sha-256": "db86794371a1e2075f9455b55e9f0b56a031f4b0cf4e85975cddd11a1dbe0061"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_loadso.h"
+          },
+          "hashes": {
+            "sha-256": "a888eb36c4aeda975d9e22b92759bf82fe2197fb1b03f93035dfa645b4f20eb0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_log.h"
+          },
+          "hashes": {
+            "sha-256": "6fda371fdbb190c1983c00aa3f73ad1f6ecada220243f677c72c4426d75294ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_messagebox.h"
+          },
+          "hashes": {
+            "sha-256": "913dd1a7980f1e3cc5af9b91562149faebeb28585823c142a1ef835a4afe1843"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_power.h"
+          },
+          "hashes": {
+            "sha-256": "65848b16e004b3409bd011000dbce67f2d1f61e79bcaeb65b937762ca88c6b4d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_render.h"
+          },
+          "hashes": {
+            "sha-256": "f4278210fd73c6a2841f1147d5caee9f7f774431c9650823d016c0179756f5c8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_system.h"
+          },
+          "hashes": {
+            "sha-256": "57a32f44e32a3a5397bd776d14ed2328f3ec33bc3447c4a77956f671ffa9840a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_timer.h"
+          },
+          "hashes": {
+            "sha-256": "95a64ceab8f44151ce625664a7fbca92939aa790eb5bd8a659169ae741be33de"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_version.h"
+          },
+          "hashes": {
+            "sha-256": "66035cc87eee081ee5b0c66b1cefa65ff6fee8b6a82bb339283df5e2d30e1bfb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/keyboard_sdl.h"
+          },
+          "hashes": {
+            "sha-256": "9c45571850c2b60fe70422a6f321f25ade701180115641df4223ff93ed06f067"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/mouse.h"
+          },
+          "hashes": {
+            "sha-256": "56b2e022735e90b9f55b0f18d23a09733bed444b4c77be75927df870b0cc0ed8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/sprites.h"
+          },
+          "hashes": {
+            "sha-256": "3fb36c11332b69d344da97861633025d8b0e896ee7fd6393eed607741aa26a7d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/2. platforms/0. windows desktop/extlibs/sdl/include/sdl.h"
+          },
+          "hashes": {
+            "sha-256": "5d459a4c7c9594bb62b29527f0361cf5db730f33dedc17d5ee46c62830e5fd29"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_image.h"
+          },
+          "hashes": {
+            "sha-256": "943f872665a21d45a188f3c6a7508caaa97b3e410a99829ddeaa489e292ced2d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/2. platforms/0. windows desktop/extlibs/sdl/include/sdl_version.h"
+          },
+          "hashes": {
+            "sha-256": "66035cc87eee081ee5b0c66b1cefa65ff6fee8b6a82bb339283df5e2d30e1bfb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/2. platforms/0. windows desktop/extlibs/sdl/include/begin_code.h"
+          },
+          "hashes": {
+            "sha-256": "cc1c96960e89e13e5a1915834d93e9ab3cf002a95507e59a4ee0a7c945e2a469"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/2. platforms/0. windows desktop/extlibs/sdl/include/close_code.h"
+          },
+          "hashes": {
+            "sha-256": "6e64d9868ba81a78ac39b7829dc3fa9aa3e7bc562844fa8e1728dbc4f68bb997"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/video.h"
+          },
+          "hashes": {
+            "sha-256": "7bc64d047de62da7e9bffb174c76f2ad82f20c4278a569b7fb62b56e6de5f14c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/sound.h"
+          },
+          "hashes": {
+            "sha-256": "2113d2447685046864702d0efd6f25b98984bde7fe43e7715f67cb66a1910c71"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.h"
+          },
+          "hashes": {
+            "sha-256": "f0bc5d887ef441bd6aa33a574d2f5b23e92659526ab0c9bc76def2f591b62ff7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/nfont/nfont.h"
+          },
+          "hashes": {
+            "sha-256": "7ded1c550f0f7e189208379901910b15b41bc01bffb8e966ba82f299ca0998e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/logic game/joc.hpp"
+          },
+          "hashes": {
+            "sha-256": "e73c1715f6bce93944a4e6e01279a3f09edbcc86d663b20434829f195c2079ed"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/tauler.hpp"
+          },
+          "hashes": {
+            "sha-256": "7ee2cc044d731f96f84fd8e4bf03e56b3ab233387387700e6e7216c87264fc7d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/fitxa.hpp"
+          },
+          "hashes": {
+            "sha-256": "d342f2033623b0aacfd4eed29b7404d8c9a10c3517e804913c1de82cba600d8c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/moviments.hpp"
+          },
+          "hashes": {
+            "sha-256": "be8f50fcbd6c562aefc44e454e7bd5683022f4960a35650d1e1ace864efe4bd9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/posicio.hpp"
+          },
+          "hashes": {
+            "sha-256": "5eec532b8557c8c881438b881c28c4dd3f95b569c85538ca2259f47e773e4e71"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/logic game/info_joc.hpp"
+          },
+          "hashes": {
+            "sha-256": "46ce6cc70b724216e03bb3cf80823a10d0f389de53ce26dc874fed4e923aa41a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/projectedamesmp/cuamoviments.hpp"
+          },
+          "hashes": {
+            "sha-256": "aae583d168c546d61c5f59cc8733b27295d34d1333319dcd18eaf57d53c24f08"
+          }
+        }
+      ]
+    }
+  ]
+}

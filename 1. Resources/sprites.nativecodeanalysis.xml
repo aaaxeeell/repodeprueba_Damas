@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>sprites.cpp</FILENAME>
+      <LINE>69</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Buffer overrun while writing to 'anim-&gt;frames':  the writable size is '1*4' bytes, but '8' bytes might be written.</DESCRIPTION>
+    <FUNCTION>Sprite::CreateAnimation</FUNCTION>
+    <DECORATED>?CreateAnimation@Sprite@@AAEPAUT_ANIMATION@@PAUT_DESCRIPCION_ANIMACION@@@Z</DECORATED>
+    <FUNCLINE>54</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>2</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume '!!((descripcion_anim))')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>58</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>60</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>62</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>64</LINE>
+        <COLUMN>33</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>35</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume '&lt;condición de bifurcación&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>69</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>71</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>72</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>76</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'var_frame' puede ser igual a 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>35</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Continuar este bucle, (se asume '&lt;condición de bifurcación&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>69</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Escritura no válida en 'anim-&gt;frames[1]', (el intervalo de escritura comprende de 0 a 0)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>sprites.cpp</FILENAME>
+      <LINE>71</LINE>
+      <COLUMN>38</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Reading invalid data from 'anim-&gt;frames':  the readable size is '4' bytes, but '8' bytes may be read.</DESCRIPTION>
+    <FUNCTION>Sprite::CreateAnimation</FUNCTION>
+    <DECORATED>?CreateAnimation@Sprite@@AAEPAUT_ANIMATION@@PAUT_DESCRIPCION_ANIMACION@@@Z</DECORATED>
+    <FUNCLINE>54</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>2</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume '!!((descripcion_anim))')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>58</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>60</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>62</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>64</LINE>
+        <COLUMN>33</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>35</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume '&lt;condición de bifurcación&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>69</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>71</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>72</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>76</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'var_frame' puede ser igual a 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>35</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Continuar este bucle, (se asume '&lt;condición de bifurcación&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>69</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sprites.cpp</FILENAME>
+        <LINE>71</LINE>
+        <COLUMN>38</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Lectura no válida de 'anim-&gt;frames[1]', (el intervalo de lectura comprende de 0 a 0)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

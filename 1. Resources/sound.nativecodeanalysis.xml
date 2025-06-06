@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>sound.cpp</FILENAME>
+      <LINE>58</LINE>
+      <COLUMN>50</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Buffer overrun while writing to 'g_CanalesLibres':  the writable size is '24' bytes, but 'g_Posicion_Pila_Sonidos_Libres' bytes might be written.</DESCRIPTION>
+    <FUNCTION>PushCanalLibre</FUNCTION>
+    <DECORATED>?PushCanalLibre@@YAXH@Z</DECORATED>
+    <FUNCLINE>54</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>2</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume '&lt;condición de bifurcación&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>58</LINE>
+        <COLUMN>50</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Escritura no válida en 'g_CanalesLibres[6]', (el intervalo de escritura comprende de 0 a 5)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>sound.cpp</FILENAME>
+      <LINE>280</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>'g_music_buffer' puede ser '0':  no cumple con las especificaciones de la función 'memset'. </DESCRIPTION>
+    <FUNCTION>Sound_Init</FUNCTION>
+    <DECORATED>?Sound_Init@@YAXXZ</DECORATED>
+    <FUNCLINE>248</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>250</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>250</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>251</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>252</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>255</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>257</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>258</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>260</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>261</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>263</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>265</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>267</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>269</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>278</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>279</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'g_music_buffer' puede ser NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>280</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'g_music_buffer' es un argumento In/Out para 'memset' (declarado en c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\vcruntime_string.h:63)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>280</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'g_music_buffer' no debe ser NULL, porque esto no es coherente con la anotación SAL de 'memset'.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>sound.cpp</FILENAME>
+      <LINE>294</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>'g_sound_buffer_queue[var_sonido]' puede ser '0':  no cumple con las especificaciones de la función 'memset'. </DESCRIPTION>
+    <FUNCTION>Sound_Init</FUNCTION>
+    <DECORATED>?Sound_Init@@YAXXZ</DECORATED>
+    <FUNCLINE>248</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>250</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>250</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>251</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>252</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>255</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>257</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>258</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>260</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>261</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>263</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>265</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>267</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>269</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que 'resultado!=0' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>278</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>279</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>280</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>289</LINE>
+        <COLUMN>33</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>291</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>291</LINE>
+        <COLUMN>33</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume 'var_sonido&lt;((8-1-1))')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>293</LINE>
+        <COLUMN>37</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>294</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'g_sound_buffer_queue' es un argumento In/Out para 'memset' (declarado en c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\vcruntime_string.h:63)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>294</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'g_sound_buffer_queue[var_sonido]' no debe ser NULL, porque esto no es coherente con la anotación SAL de 'memset'.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>sound.cpp</FILENAME>
+      <LINE>310</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Desreferenciando el puntero NULL 'new_sound'. </DESCRIPTION>
+    <FUNCTION>Sound_LoadFileStream</FUNCTION>
+    <DECORATED>?Sound_LoadFileStream@@YAPAUT_SOUND@@PADH@Z</DECORATED>
+    <FUNCLINE>303</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>305</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>306</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>308</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'new_sound' puede ser NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>310</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'new_sound' se desreferencia, pero puede que siga siendo NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>sound.cpp</FILENAME>
+      <LINE>344</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Desreferenciando el puntero NULL 'new_sound'. </DESCRIPTION>
+    <FUNCTION>Sound_LoadMemoryStream</FUNCTION>
+    <DECORATED>?Sound_LoadMemoryStream@@YAPAUT_SOUND@@PADH@Z</DECORATED>
+    <FUNCLINE>335</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>337</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>338</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>339</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>340</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>342</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'new_sound' puede ser NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>344</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'new_sound' se desreferencia, pero puede que siga siendo NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>sound.cpp</FILENAME>
+      <LINE>365</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>'new_sound-&gt;buffer_fichero' puede ser '0':  no cumple con las especificaciones de la función 'fread'. </DESCRIPTION>
+    <FUNCTION>Sound_LoadMemoryStream</FUNCTION>
+    <DECORATED>?Sound_LoadMemoryStream@@YAPAUT_SOUND@@PADH@Z</DECORATED>
+    <FUNCLINE>335</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>337</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>338</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>339</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>340</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>342</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>344</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>345</LINE>
+        <COLUMN>29</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>347</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>348</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>350</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>352</LINE>
+        <COLUMN>13</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que 'fichero==0' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>362</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>364</LINE>
+        <COLUMN>30</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>365</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'buffer_fichero' es un argumento In/Out para 'fread' (declarado en c:\program files (x86)\windows kits\10\include\10.0.22621.0\ucrt\stdio.h:239)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>sound.cpp</FILENAME>
+        <LINE>365</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'new_sound-&gt;buffer_fichero' no debe ser NULL, porque esto no es coherente con la anotación SAL de 'fread'.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

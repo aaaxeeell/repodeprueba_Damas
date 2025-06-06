@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>stb_vorbis.cpp</FILENAME>
+      <LINE>710</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Reading invalid data from 'available':  the readable size is '_Old_2`128' bytes, but 'z' bytes may be read.</DESCRIPTION>
+    <FUNCTION>compute_codewords</FUNCTION>
+    <DECORATED>?compute_codewords@@YAHPAUCodebook@@PAEHPAI@Z</DECORATED>
+    <FUNCLINE>680</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>682</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>682</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>682</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>683</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'available' es una matriz de 32 elementos (128 bytes)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>685</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'available' es una salida de 'memset' (declarada en c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\vcruntime_string.h:63)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>687</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>687</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume 'k&lt;n')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>687</LINE>
+        <COLUMN>36</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en esta bifurcación, (se asume 'len[k]&lt;255')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>688</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que 'k==n' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>690</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>692</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>692</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir este bucle, (se asume que 'i&lt;=len[k]' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>698</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>698</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume 'i&lt;n')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>699</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>700</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>700</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>701</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que 'z==255' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>708</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>9</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir este bucle, (se asume que 'z&gt;0&amp;&amp;!available[z]' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>709</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>10</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que 'z==0' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>710</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>11</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Lectura no válida de 'available[-1]', (el intervalo de lectura comprende de 0 a 31)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>stb_vorbis.cpp</FILENAME>
+      <LINE>711</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Buffer overrun while writing to 'available':  the writable size is '128' bytes, but 'z' bytes might be written.</DESCRIPTION>
+    <FUNCTION>compute_codewords</FUNCTION>
+    <DECORATED>?compute_codewords@@YAHPAUCodebook@@PAEHPAI@Z</DECORATED>
+    <FUNCLINE>680</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>682</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>682</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>682</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>683</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'available' es una matriz de 32 elementos (128 bytes)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>685</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'available' es una salida de 'memset' (declarada en c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\vcruntime_string.h:63)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>687</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>687</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume 'k&lt;n')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>687</LINE>
+        <COLUMN>36</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en esta bifurcación, (se asume 'len[k]&lt;255')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>688</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que 'k==n' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>690</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>692</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>692</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir este bucle, (se asume que 'i&lt;=len[k]' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>698</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>698</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume 'i&lt;n')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>699</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>700</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>700</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>701</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que 'z==255' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>708</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>9</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir este bucle, (se asume que 'z&gt;0&amp;&amp;!available[z]' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>709</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>10</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que 'z==0' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>710</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>711</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>11</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Escritura no válida en 'available[-1]', (el intervalo de escritura comprende de 0 a 31)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>stb_vorbis.cpp</FILENAME>
+      <LINE>1055</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6295</DEFECTCODE>
+    <DESCRIPTION>Bucle for mal definido.  El bucle se ejecuta infinitamente.</DESCRIPTION>
+    <FUNCTION>start_page_no_capturepattern</FUNCTION>
+    <DECORATED>?start_page_no_capturepattern@@YAHPAUstb_vorbis@@@Z</DECORATED>
+    <FUNCLINE>1028</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>stb_vorbis.cpp</FILENAME>
+      <LINE>1133</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Reading invalid data from 'f-&gt;segments':  the readable size is '255' bytes, but 'f-&gt;next_seg++' bytes may be read.</DESCRIPTION>
+    <FUNCTION>next_segment</FUNCTION>
+    <DECORATED>?next_segment@@YAHPAUstb_vorbis@@@Z</DECORATED>
+    <FUNCLINE>1124</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>1126</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>1127</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que 'f-&gt;last_seg' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>1128</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en esta bifurcación, (se asume 'f-&gt;next_seg==-1')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>1129</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>1130</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que '!start_page(f)' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>1131</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que '!((f-&gt;page_flag&amp;1))' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>1133</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Lectura no válida de 'f-&gt;segments[-1]', (el intervalo de lectura comprende de 0 a 254)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>stb_vorbis.cpp</FILENAME>
+      <LINE>1766</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>6255</DEFECTCODE>
+    <DESCRIPTION>`_alloca` indica un error iniciando una excepción de desbordamiento de pila. Considere usar _malloca en su lugar.</DESCRIPTION>
+    <FUNCTION>decode_residue</FUNCTION>
+    <DECORATED>?decode_residue@@YAXPAUstb_vorbis@@QAPAMHHHPAE@Z</DECORATED>
+    <FUNCLINE>1755</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>stb_vorbis.cpp</FILENAME>
+      <LINE>2026</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>La función usa '73756' bytes de pila.  Considere la posibilidad de mover algunos datos al montón.</DESCRIPTION>
+    <FUNCTION>dct_iv_slow</FUNCTION>
+    <DECORATED>?dct_iv_slow@@YAXPAMH@Z</DECORATED>
+    <FUNCLINE>2026</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>stb_vorbis.cpp</FILENAME>
+      <LINE>2038</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Usando la memoria sin inicializar 'mcos'.</DESCRIPTION>
+    <FUNCTION>dct_iv_slow</FUNCTION>
+    <DECORATED>?dct_iv_slow@@YAXPAMH@Z</DECORATED>
+    <FUNCLINE>2026</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2028</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'mcos' no se ha inicializado</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2029</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2030</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2030</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2031</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2031</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2032</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2033</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2033</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir este bucle, (se asume que 'i&lt;8*n' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2035</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2035</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume 'i&lt;n')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2036</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2037</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2037</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume 'j&lt;n')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2038</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2038</LINE>
+        <COLUMN>23</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Se usa 'mcos', pero puede que no se haya inicializado</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>stb_vorbis.cpp</FILENAME>
+      <LINE>2045</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>La función usa '16416' bytes de pila.  Considere la posibilidad de mover algunos datos al montón.</DESCRIPTION>
+    <FUNCTION>inverse_mdct_slow</FUNCTION>
+    <DECORATED>?inverse_mdct_slow@@YAXPAMHPAUstb_vorbis@@H@Z</DECORATED>
+    <FUNCLINE>2045</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>stb_vorbis.cpp</FILENAME>
+      <LINE>2332</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>6255</DEFECTCODE>
+    <DESCRIPTION>`_alloca` indica un error iniciando una excepción de desbordamiento de pila. Considere usar _malloca en su lugar.</DESCRIPTION>
+    <FUNCTION>inverse_mdct</FUNCTION>
+    <DECORATED>?inverse_mdct@@YAXPAMHPAUstb_vorbis@@H@Z</DECORATED>
+    <FUNCLINE>2326</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+      <FILENAME>stb_vorbis.cpp</FILENAME>
+      <LINE>2976</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Usando la memoria sin inicializar 'zero_channel'.</DESCRIPTION>
+    <FUNCTION>vorbis_decode_packet_rest</FUNCTION>
+    <DECORATED>?vorbis_decode_packet_rest@@YAHPAUstb_vorbis@@PAHPAUMode@@HHHH1@Z</DECORATED>
+    <FUNCLINE>2857</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2859</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2860</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2860</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2860</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2860</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2860</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2861</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'zero_channel' no se ha inicializado</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2862</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2863</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2867</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2868</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2870</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2873</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2875</LINE>
+        <COLUMN>3</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2876</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2876</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir este bucle, (se asume que 'i&lt;f-&gt;channels' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2967</LINE>
+        <COLUMN>3</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2970</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Omitir esta bifurcación, (se asume que 'f-&gt;alloc.alloc_buffer' es false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2974</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2975</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2975</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Entrar en este bucle, (se asume 'i&lt;map-&gt;coupling_steps')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2976</LINE>
+        <COLUMN>48</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Ingenieria Informática\graficos\0. C++ Code\Graphic Lib\</FILEPATH>
+        <FILENAME>stb_vorbis.cpp</FILENAME>
+        <LINE>2976</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Se usa 'zero_channel', pero puede que no se haya inicializado</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

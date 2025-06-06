@@ -1,0 +1,75 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.43.34810.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/image_png.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "77ec670988372e94fe69b75f2c49ee450020c524fa8a6d620de4b0e76905e823"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/2. platforms/0. windows desktop/extlibs/libpng/png.h"
+          },
+          "hashes": {
+            "sha-256": "f88f99fa3c67adde02efdff7bc46ab8f1a2f16027e28c23894ab79974748abe8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/2. platforms/0. windows desktop/extlibs/libpng/pnglibconf.h"
+          },
+          "hashes": {
+            "sha-256": "0d9091095dff366617ff8c9f2485344db7c8ccb68f2ce7f8e456bc1d65db82bc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/2. platforms/0. windows desktop/extlibs/libpng/pngconf.h"
+          },
+          "hashes": {
+            "sha-256": "ce119e5b66a1e393af4e4e21ec04b10fdb4553a127ea2e4038b2cebb0e2c3365"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/debug.h"
+          },
+          "hashes": {
+            "sha-256": "7552676168b53bba16aaf75129c0a0ebefb99fc2a0ee5165f069aaa0ef24605d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/error.h"
+          },
+          "hashes": {
+            "sha-256": "48124a468b7cf6a825eaa5a90bee0ec451cc0266a3273772059d52abe3c035ea"
+          }
+        }
+      ]
+    }
+  ]
+}

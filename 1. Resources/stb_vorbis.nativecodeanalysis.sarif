@@ -1,0 +1,1831 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'available':  the readable size is '_Old_2`128' bytes, but 'z' bytes may be read."
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                },
+                "region": {
+                  "startLine": 710,
+                  "startColumn": 7,
+                  "endLine": 710,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "compute_codewords",
+                  "decoratedName": "?compute_codewords@@YAHPAUCodebook@@PAEHPAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 682,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 682,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 682,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 683,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'available' es una matriz de 32 elementos (128 bytes)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 685,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'available' es una salida de 'memset' (declarada en c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\vcruntime_string.h:63)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 687,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 687,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar en este bucle, (se asume 'k<n')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 687,
+                            "startColumn": 37
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar en esta bifurcación, (se asume 'len[k]<255')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 688,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que 'k==n' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 690,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 692,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 692,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir este bucle, (se asume que 'i<=len[k]' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 698,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 698,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar en este bucle, (se asume 'i<n')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 699,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 700,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 700,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 701,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que 'z==255' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 708,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir este bucle, (se asume que 'z>0&&!available[z]' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 709,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que 'z==0' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 710,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Lectura no válida de 'available[-1]', (el intervalo de lectura comprende de 0 a 31)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Buffer overrun while writing to 'available':  the writable size is '128' bytes, but 'z' bytes might be written."
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                },
+                "region": {
+                  "startLine": 711,
+                  "startColumn": 7,
+                  "endLine": 711,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "compute_codewords",
+                  "decoratedName": "?compute_codewords@@YAHPAUCodebook@@PAEHPAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 682,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 682,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 682,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 683,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'available' es una matriz de 32 elementos (128 bytes)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 685,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'available' es una salida de 'memset' (declarada en c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\vcruntime_string.h:63)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 687,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 687,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar en este bucle, (se asume 'k<n')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 687,
+                            "startColumn": 37
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar en esta bifurcación, (se asume 'len[k]<255')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 688,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que 'k==n' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 690,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 692,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 692,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir este bucle, (se asume que 'i<=len[k]' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 698,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 698,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar en este bucle, (se asume 'i<n')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 699,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 700,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 700,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 701,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que 'z==255' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 708,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir este bucle, (se asume que 'z>0&&!available[z]' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 709,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que 'z==0' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 710,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 711,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Escritura no válida en 'available[-1]', (el intervalo de escritura comprende de 0 a 31)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6295",
+          "message": {
+            "text": "Bucle for mal definido.  El bucle se ejecuta infinitamente."
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                },
+                "region": {
+                  "startLine": 1055,
+                  "startColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "start_page_no_capturepattern",
+                  "decoratedName": "?start_page_no_capturepattern@@YAHPAUstb_vorbis@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'f->segments':  the readable size is '255' bytes, but 'f->next_seg++' bytes may be read."
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                },
+                "region": {
+                  "startLine": 1133,
+                  "startColumn": 4,
+                  "endLine": 1133,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "next_segment",
+                  "decoratedName": "?next_segment@@YAHPAUstb_vorbis@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 1126,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 1127,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que 'f->last_seg' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 1128,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar en esta bifurcación, (se asume 'f->next_seg==-1')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 1129,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 1130,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que '!start_page(f)' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 1131,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que '!((f->page_flag&1))' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 1133,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "Lectura no válida de 'f->segments[-1]', (el intervalo de lectura comprende de 0 a 254)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6255",
+          "message": {
+            "text": "`_alloca` indica un error iniciando una excepción de desbordamiento de pila. Considere usar _malloca en su lugar."
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                },
+                "region": {
+                  "startLine": 1766,
+                  "startColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "decode_residue",
+                  "decoratedName": "?decode_residue@@YAXPAUstb_vorbis@@QAPAMHHHPAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "La función usa '73756' bytes de pila.  Considere la posibilidad de mover algunos datos al montón."
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                },
+                "region": {
+                  "startLine": 2026,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "dct_iv_slow",
+                  "decoratedName": "?dct_iv_slow@@YAXPAMH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Usando la memoria sin inicializar 'mcos'."
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                },
+                "region": {
+                  "startLine": 2038,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "dct_iv_slow",
+                  "decoratedName": "?dct_iv_slow@@YAXPAMH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2028,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'mcos' no se ha inicializado"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2029,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2030,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2030,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2031,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2031,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2032,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2033,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2033,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir este bucle, (se asume que 'i<8*n' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2035,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2035,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar en este bucle, (se asume 'i<n')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2036,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2037,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2037,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar en este bucle, (se asume 'j<n')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2038,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2038,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Se usa 'mcos', pero puede que no se haya inicializado"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "La función usa '16416' bytes de pila.  Considere la posibilidad de mover algunos datos al montón."
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                },
+                "region": {
+                  "startLine": 2045,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "inverse_mdct_slow",
+                  "decoratedName": "?inverse_mdct_slow@@YAXPAMHPAUstb_vorbis@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6255",
+          "message": {
+            "text": "`_alloca` indica un error iniciando una excepción de desbordamiento de pila. Considere usar _malloca en su lugar."
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                },
+                "region": {
+                  "startLine": 2332,
+                  "startColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "inverse_mdct",
+                  "decoratedName": "?inverse_mdct@@YAXPAMHPAUstb_vorbis@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Usando la memoria sin inicializar 'zero_channel'."
+          },
+          "analysisTarget": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                },
+                "region": {
+                  "startLine": 2976,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vorbis_decode_packet_rest",
+                  "decoratedName": "?vorbis_decode_packet_rest@@YAHPAUstb_vorbis@@PAHPAUMode@@HHHH1@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2859,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2860,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2860,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2860,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2860,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2860,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2861,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "'zero_channel' no se ha inicializado"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2862,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2863,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2867,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2868,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2870,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2873,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2875,
+                            "startColumn": 4
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2876,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2876,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir este bucle, (se asume que 'i<f->channels' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2967,
+                            "startColumn": 4
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2970,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que 'f->alloc.alloc_buffer' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2974,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2975,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2975,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar en este bucle, (se asume 'i<map->coupling_steps')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2976,
+                            "startColumn": 49
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Ingenieria Informática/graficos/0. C++ Code/Graphic Lib/stb_vorbis.cpp"
+                          },
+                          "region": {
+                            "startLine": 2976,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Se usa 'zero_channel', pero puede que no se haya inicializado"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.43.34810.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "f72f0c367f7c485fbe922c49162e426e769e6973f1720e9d5e1b686f4170d2f9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/ingenieria informática/graficos/0. c++ code/graphic lib/stb_vorbis.h"
+          },
+          "hashes": {
+            "sha-256": "f0bc5d887ef441bd6aa33a574d2f5b23e92659526ab0c9bc76def2f591b62ff7"
+          }
+        }
+      ]
+    }
+  ]
+}
