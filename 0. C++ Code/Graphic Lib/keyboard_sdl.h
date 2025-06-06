@@ -2,7 +2,7 @@
 #define __KEYBOARD_SDL_INCLUDED_
 
 #if defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__NT__) || defined  (_WIN64)
-#include </Ingenieria Informática/ProjecteDamesMP/2. Platforms/0. Windows Desktop/extlibs/SDL/include/SDL.h>
+#include <SDL.h>
 #elif __APPLE__
 #include <SDL2/SDL.h>
 #endif

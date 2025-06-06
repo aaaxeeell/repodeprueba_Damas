@@ -1,5 +1,5 @@
 #include "Fitxa.hpp"
-#include "/Ingenieria Informática/ProjecteDamesMP/0. C++ Code/Logic Game/GraphicManager.h"
+#include "GraphicManager.h"
 
 void Fitxa::afegeixMovimentValid(const Moviment& M)
 {
